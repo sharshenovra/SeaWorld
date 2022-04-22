@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		607AAD6C2800785000A86130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD6B2800785000A86130 /* AppDelegate.swift */; };
 		607AAD6E2800785000A86130 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD6D2800785000A86130 /* SceneDelegate.swift */; };
-		607AAD702800785000A86130 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD6F2800785000A86130 /* ViewController.swift */; };
 		607AAD732800785000A86130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607AAD712800785000A86130 /* Main.storyboard */; };
 		607AAD752800785100A86130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607AAD742800785100A86130 /* Assets.xcassets */; };
 		607AAD782800785100A86130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607AAD762800785100A86130 /* LaunchScreen.storyboard */; };
+		607AAD862800789D00A86130 /* Actors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD852800789D00A86130 /* Actors.swift */; };
+		607AAD88280078B100A86130 /* SeaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD87280078B100A86130 /* SeaViewModel.swift */; };
+		607AAD8A280078D000A86130 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD89280078D000A86130 /* Draw.swift */; };
+		607AAD8C280078D900A86130 /* SeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD8B280078D900A86130 /* SeaView.swift */; };
+		607AAD8F280083B000A86130 /* Pinguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD8E280083B000A86130 /* Pinguin.swift */; };
+		607AAD91280083B700A86130 /* KillerWhale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD90280083B700A86130 /* KillerWhale.swift */; };
+		607AAD97280086AF00A86130 /* ActorsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD96280086AF00A86130 /* ActorsProtocol.swift */; };
+		607AAD99280087E100A86130 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607AAD98280087E100A86130 /* Water.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		607AAD682800785000A86130 /* SeaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607AAD6B2800785000A86130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607AAD6D2800785000A86130 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		607AAD6F2800785000A86130 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607AAD722800785000A86130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607AAD742800785100A86130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607AAD772800785100A86130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		607AAD792800785100A86130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607AAD852800789D00A86130 /* Actors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actors.swift; sourceTree = "<group>"; };
+		607AAD87280078B100A86130 /* SeaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaViewModel.swift; sourceTree = "<group>"; };
+		607AAD89280078D000A86130 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		607AAD8B280078D900A86130 /* SeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaView.swift; sourceTree = "<group>"; };
+		607AAD8E280083B000A86130 /* Pinguin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinguin.swift; sourceTree = "<group>"; };
+		607AAD90280083B700A86130 /* KillerWhale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillerWhale.swift; sourceTree = "<group>"; };
+		607AAD96280086AF00A86130 /* ActorsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsProtocol.swift; sourceTree = "<group>"; };
+		607AAD98280087E100A86130 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,62 @@
 		607AAD6A2800785000A86130 /* SeaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				607AAD8D280083A100A86130 /* Entity */,
+				607AAD822800787300A86130 /* Models */,
+				607AAD812800786C00A86130 /* ViewModels */,
+				607AAD802800786600A86130 /* Draw */,
+				607AAD7F2800785D00A86130 /* Views */,
 				607AAD6B2800785000A86130 /* AppDelegate.swift */,
 				607AAD6D2800785000A86130 /* SceneDelegate.swift */,
-				607AAD6F2800785000A86130 /* ViewController.swift */,
 				607AAD712800785000A86130 /* Main.storyboard */,
 				607AAD742800785100A86130 /* Assets.xcassets */,
 				607AAD762800785100A86130 /* LaunchScreen.storyboard */,
 				607AAD792800785100A86130 /* Info.plist */,
 			);
 			path = SeaWorld;
+			sourceTree = "<group>";
+		};
+		607AAD7F2800785D00A86130 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				607AAD8B280078D900A86130 /* SeaView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		607AAD802800786600A86130 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				607AAD89280078D000A86130 /* Draw.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		607AAD812800786C00A86130 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				607AAD87280078B100A86130 /* SeaViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		607AAD822800787300A86130 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				607AAD852800789D00A86130 /* Actors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		607AAD8D280083A100A86130 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				607AAD8E280083B000A86130 /* Pinguin.swift */,
+				607AAD90280083B700A86130 /* KillerWhale.swift */,
+				607AAD96280086AF00A86130 /* ActorsProtocol.swift */,
+				607AAD98280087E100A86130 /* Water.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607AAD702800785000A86130 /* ViewController.swift in Sources */,
+				607AAD91280083B700A86130 /* KillerWhale.swift in Sources */,
+				607AAD97280086AF00A86130 /* ActorsProtocol.swift in Sources */,
 				607AAD6C2800785000A86130 /* AppDelegate.swift in Sources */,
+				607AAD99280087E100A86130 /* Water.swift in Sources */,
+				607AAD88280078B100A86130 /* SeaViewModel.swift in Sources */,
+				607AAD8C280078D900A86130 /* SeaView.swift in Sources */,
 				607AAD6E2800785000A86130 /* SceneDelegate.swift in Sources */,
+				607AAD8F280083B000A86130 /* Pinguin.swift in Sources */,
+				607AAD8A280078D000A86130 /* Draw.swift in Sources */,
+				607AAD862800789D00A86130 /* Actors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
